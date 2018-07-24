@@ -1,2 +1,0 @@
-# A-Frame Cheat Sheet
-
