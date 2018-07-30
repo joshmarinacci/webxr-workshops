@@ -1,4 +1,4 @@
-# Introduction to HTML, WebXR, and AFrame
+# Introduction to HTML, WebXR, and A-Frame
 
 What the student will learn: How markup in the source code translates
 into what you see in the final webpage. They will make a simple page with standard html, add an image, then switch to VR mode and add a cube.
