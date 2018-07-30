@@ -17,8 +17,8 @@ tab. Click the fish button in the upper right hand corner, then select the `Remi
 Notice how what you see in the real view looks sort
 of like the markup. Headers and paragraphs.
 
-Now go back to the code view. Change the header to
-say "Greetings Earthling". Now go back to the live view. It will automatically update. Now you can see 'Greetings Earthling' as the header.
+Now go back to the code view. Change the text that says "Hello World" in `h1` angle brackets (the `<` and `>` symbols) to
+say "Greetings Earthling". Now go back to the live view. It will automatically update. Now you should see "Greetings Earthling" as the header.
 
 What you have been writing is called HTML, which stands for Hyper Text Markup Language. It is a special kind of computer code used to make webpages.  Those things inside of the angle brackets (< and > symbols) are called HTML *elements*.  Each element corresponds to something in the output document.
 
