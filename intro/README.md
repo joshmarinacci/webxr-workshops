@@ -131,7 +131,7 @@ You can use most color names for the color, such as cyan, blue, aqua, gray and [
 
 Much like in many other programming languages, you can also use a hex value like `#ff0000` for red or `#888888` for gray.
 
-So far we have only used one object. Let's add a cube and position it right under the sphere. Move the sphere to 0 1.5 -4, so it's in front of you and 1.5 meters above the center.  Now add a cube by pasting in this code:
+So far we have only used one object. Let's add a cube and position it right under the sphere. Move the sphere to 0 1.5 -4, so it's in front of you and 1.5 meters above the center.  Now add a cube by pasting in this code within the `<a-scene>` element:
 
 ```
 <a-box
