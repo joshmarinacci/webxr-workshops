@@ -131,10 +131,10 @@ If you open the A-Frame [Visual Inspector](https://aframe.io/docs/0.8.0/introduc
 
 ## Summary:
 
-Now you have learned that objects are built out of many triangles. These triangles are called the object's __geometry__ and can be created from __primitives__ like cylinders or in 3D drawing programs like Blender. Some objects are actually _2D_, and can have only 2 sides, or even _one side_.  To see the geometry inside of an object set __wireframe__ to true.
+Now you have learned that objects are built out of many triangles. These triangles are called the object's __geometry__ and can be created from __primitives__ like cylinders or in 3D drawing programs like Blender. Some objects are actually _2D_, and can have only two sides, or even _one side_.  To see the geometry inside of an object set __wireframe__ to true.
 
 ### Enrichment
 To play some more with geometry, try these.
 
 * Use some of the more advanced primitives like a [torus](https://aframe.io/docs/0.8.0/primitives/a-torus.html) (a donut shape), a [dodecahedron](https://aframe.io/docs/0.8.0/primitives/a-dodecahedron.html) (a 12 sided ball), or even the [torus knot](https://aframe.io/docs/0.8.0/primitives/a-torus-knot.html) which looks like a pretzel.
-* Place three images in a row using [curved images](https://aframe.io/docs/0.8.0/primitives/a-curvedimage.html) so you can see them as you turn your head.
+* If you have a VR headset, try placing three images in a row using [curved images](https://aframe.io/docs/0.8.0/primitives/a-curvedimage.html) so you can see them as you turn your head.
