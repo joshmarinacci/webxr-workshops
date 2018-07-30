@@ -150,10 +150,19 @@ Now you have a purple one meter cube. Try moving it around, changing the sizes, 
 If you'd like to add some other shapes, try the cylinder and the cone.
 
 ```
-<a-cone radius-bottom="2"
-        radius-top="0.5"></a-cone>
+<a-cone radius-bottom="1"
+        height="1.5"
+        color="blue"
+        radius-top="0.5"
+        position="0 1.5 -4"
+        ></a-cone>
 
-<a-cylinder height="3" radius="1.5"></a-cylinder>        
+<a-cylinder
+        height="3" 
+        radius="1.5"
+        color="blue"
+        position="0 1.5 -4"  
+></a-cylinder>        
 ```
 
 ### Summary
