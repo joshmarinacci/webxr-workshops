@@ -49,10 +49,9 @@ Let's create our own second page instead of linking to NASA. In the left sidebar
 </html>
 ```
 
-Select the first page from the Glitch sidebar. Change the a link to point to `rocket.html` instead of the nasa website.  Load in the live view.
-Now when you click on the link it will go to your new page with the picture of the rocket.
+Select the first page from the Glitch sidebar. Change the `<a>` link to point to `./rocket.html` instead of the nasa website: `<a href="./rocket.html">`  Reload the live view. Now when you click on the link it will go to your new page with the picture of the rocket.
 
-This is the third big thing to know about the web. __A website is a collection of webpages with text and media.__
+This is the third big thing to know about the web. __A website is a collection of web pages with text and media.__
 
 ## The 3D Web
 
