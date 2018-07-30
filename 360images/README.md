@@ -35,11 +35,16 @@ Believe it or not, that is all you have to do to include a 360 image in your sce
 
 ## Equirectangular Images
 
-360 images are in a format called [*equirectangular*](https://en.wikipedia.org/wiki/Equirectangular_projection). This format takes the 360 degrees of a spherical image and flattens it onto a 2 by 1 rectangle. Another word for it is *cylindrical projection*, as this projection is sometimes used to map a globe of the earth into a flat map. In fact, one of my favorite equirectanglar images is [this view of earth](https://commons.wikimedia.org/wiki/File:Equirectangular_projection_SW.jpg) with the clouds removed.
+360 images are usually stored in a format called [*equirectangular*](https://en.wikipedia.org/wiki/Equirectangular_projection). This format takes the 360 degrees of a spherical image and flattens it onto a 2 by 1 rectangle. Another word for it is *cylindrical projection*, as this projection is sometimes used to map a globe of the earth into a flat map. In fact, one of my favorite equirectanglar images is [this view of earth](https://commons.wikimedia.org/wiki/File:Equirectangular_projection_SW.jpg) with the clouds removed.
 
 ![equirectanglar view of earth](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/640px-Equirectangular_projection_SW.jpg)
 
 Equirectangular images are often used as a texture for spheres in 3D worlds. If I was to make a model of the moon I would use such an image.  360 images are the same, except that they are captured from inside of a sphere instead of outside.  The `a-sky` component really is just a large sphere with the texture drawn on the inside, which is why we can see it.
+
+Equirectangular images may come out of your camera in another format such as *dual fisheyel* image, as in the example below. Dual fisheye is a different projection. The image must be converted to equirectangular before you use it in your A-Frame project. Usually this is done with tools that came with your 360 camera.
+
+![spherical image example](https://www.pinnaclesys.com/static/pin/images/landing/360video/screens/thumbs/360-dual-fisheye.jpg)
+
 
 If you want to find free to use 360 images on the web try searching for `creative commons equirectangular`.  One of my favorite resources is this [flickr group](https://www.flickr.com/search/?group_id=44671723%40N00&view_all=1&text=creative%20commons&license=2%2C3%2C4%2C5%2C6%2C9). As you can see, there are a lot of people taking interesting images.
 
