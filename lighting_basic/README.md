@@ -84,7 +84,14 @@ Here's what we want it to look like.
 
 ![moon scene](images/moon.png)
 
-To make the moon glow we will give it an `emissive` color.  Normally objects in A-Frame only reflect the light that hits them. But with an emissive color they can produce their own light, even if no lights are in the scene.
+To make the background of the scene pitch black set the background of the scene to `color:black`:
+
+```
+<a-scene background="color:black;">
+
+```
+
+To make the moon glow we will give it an `emissive` color.  Normally objects in A-Frame only reflect the light that hits them. But with an emissive color they can produce their own light, even if no lights are in the scene. Add the moon like this:
 
 ```
 <a-sphere
