@@ -95,7 +95,7 @@ You can ignore the stuff at the top. This is just boilerplate needed to load the
 
 The `a-scene` element represents the entire 3D scene. Everything in 3D should be inside of the *a-scene*.
 
-The `a-sphere` element creates the red sphere that we see in the live view. The position is set to `0 1.5 -4`. This creates a yellow sphere one meter in radius, placed four meters in front of the camera.
+The `a-sphere` element creates the red sphere that we see in the live view. The position is set to `0 1.5 -4`. This creates a red sphere one meter in radius, placed four meters in front of the camera.
 
 ## Position
 
