@@ -35,7 +35,7 @@ Believe it or not, that is all you have to do to include a 360 image in your sce
 
 ## Equirectangular Images
 
-360 images are in a format called [*equirectangular*](https://en.wikipedia.org/wiki/Equirectangular_projection). This format takes the 360 degrees of a spherical image and flattens it onto a 2 by 1 rectangle. Another word for it is cylindrical projection, as this project is sometimes used to map a globe of the earth into a flat map. In fact, one of my favorite equirectanglar images is [this view of earth](https://commons.wikimedia.org/wiki/File:Equirectangular_projection_SW.jpg) with the clouds removed.
+360 images are in a format called [*equirectangular*](https://en.wikipedia.org/wiki/Equirectangular_projection). This format takes the 360 degrees of a spherical image and flattens it onto a 2 by 1 rectangle. Another word for it is *cylindrical projection*, as this projection is sometimes used to map a globe of the earth into a flat map. In fact, one of my favorite equirectanglar images is [this view of earth](https://commons.wikimedia.org/wiki/File:Equirectangular_projection_SW.jpg) with the clouds removed.
 
 ![equirectanglar view of earth](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/640px-Equirectangular_projection_SW.jpg)
 
