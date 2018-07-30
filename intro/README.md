@@ -6,7 +6,7 @@ into what you see in the final webpage. They will make a simple page with standa
 # Simple HTML
 
 Go to [this](https://webxr-workshop-01.glitch.me) webpage in a new window or
-tab. Click the fish button in the upper right hand corner, then select the `Remix on Glitch` button to create a copy for yourself.  Now select `index.html` in the sidebar to see the markup. Now press the *Show* button. This will open a new tab showing the live webpage.
+tab. Click the fish button in the upper right hand corner, then select the `Remix on Glitch` button to create a copy for yourself.  Now select `index.html` in the sidebar to see the markup. Now click on *Show* in the top bar. This will open a new tab showing the live webpage.
 
 
 ![markup](images/markup-start.png)
