@@ -57,7 +57,7 @@ This is the third big thing to know about the web. __A website is a collection o
 
 So far everything we have made has been a two dimensional text based webpage.  But this course is about how to make 3D graphics and Virtual Reality with the web. Let's create a 3D webpage now.
 
-Go to [this](https://webxr-workshop-lesson01b.glitch.me/) webpage and view it. This page contains a minimal 3d scene of a sphere. You can turn the camera by dragging with your mouse. If you have a phone or VR headset with you, then open this webpage on that device to see it in full 3D.
+Go to [this](https://webxr-workshop-lesson01b.glitch.me/) webpage and view it. This page contains a minimal 3d scene of a sphere. You can turn the camera by dragging with your mouse or trackpad.. If you have a phone or VR headset with you, then open this webpage on that device to see it in full 3D.
 
 Now click the remix button in the upper right corner to create your own copy. Let's look at the code in `index.html`
 
