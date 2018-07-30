@@ -119,9 +119,9 @@ Add this to your project
               ></a-entity>
 ```
 
-To build something complex like this duck you can't do it by just adding primitives like cubes together (well, I suppose you *could* do it, but it would be very hard and take a long time). Instead, objects like these are drawn in 3D drawing programs like [Blender](https://www.blender.org) and [Maya](https://www.autodesk.com/products/maya/overview).  They are then exported to GLTF files.
+To build something complex like this duck you can't do it by just adding primitives like cubes together (well, I suppose you *could* do it, but it would be very hard and take a long time). Instead, objects like these are drawn in 3D drawing programs like [Blender](https://www.blender.org) and [Maya](https://www.autodesk.com/products/maya/overview).  They are then exported as GLTF files.
 
-GLTF stands for Graphics Language Transmission Format. GLTF is [a standard format](https://en.wikipedia.org/wiki/GlTF) for 3D objects on the web. Most 3D drawing programs will export to GLTFs.  The duck above was created by one of the Mozilla Mixed Reality designers.
+GLTF stands for Graphics Language Transmission Format. GLTF is [a standard format](https://en.wikipedia.org/wiki/GlTF) for 3D objects on the web. Most 3D drawing programs will export models as GLTFs.  The duck above was created by one of the Mozilla Mixed Reality designers.
 
 If you open the A-Frame [Visual Inspector](https://aframe.io/docs/0.8.0/introduction/visual-inspector-and-dev-tools.html) and zoom in you can see that the duck is made of many triangles
 
