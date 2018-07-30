@@ -82,7 +82,7 @@ You may recall that every element in A-Frame has a set of components. By putting
 
 ## Positional Audio
 
-In VR sound can be positional.  We attached the clang to the cube, so if the cube is on the right side of the scene will actually sound _like it comes from the right_. You may need to have stereo headphones on to hear the effect.  Sounds will also be quieter if they come from further away. Try using the arrow keys to back away from the cube, then click on it again. Notice that it sounds quieter.
+In VR sound can be positional.  We attached the clang to the cube, so if the cube is on the right side of the scene it will actually sound _like it comes from the right_. You may need to have stereo headphones on to hear the effect.  Sounds will also be quieter if they come from further away. Try using the arrow keys to back away from the cube, then click on it again. Notice that it sounds quieter.
 
 The rain sound is *not* positional because we attached it to the *scene* which exists everywhere.  Whenever you want sounds to be everywhere attach them to the scene. If you want the sound to be in just one area of your scene then attach it to some object *within* the scene.
 
