@@ -80,7 +80,7 @@ Remove the other objects from your scene and add this one
 
 ![curved image](images/curved-image.png)
 
-Now when you plan left or right it still looks good because the image is warped along with the screen. Curved images are perfect for when you need to show several images next to each other that are all seen from the same viewpoint.
+Now when you move the camera left or right it still looks good because the image is warped along with the screen. Curved images are perfect for when you need to show several images next to each other that are all seen from the same viewpoint.
 
 Much as the flat image is just a plane with a picture on it, curved images are partial cylinders with pictures on them. While they look similar they have different geometry. Look at both of them with the `wireframe="true"`` so you can see the underlying triangles.  At the end of the day everything in 3D scenes is drawn using a lot of triangles.
 
