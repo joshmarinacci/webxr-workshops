@@ -90,7 +90,7 @@ The code looks like this:
 
 Like before, every element in the page matches something in the output.  Let's walk through it.
 
-You can ignore the stuff at the top. This is just boilerplate needed to load the 3d library (*a-frame.min.js*) into the webpage, plus the elements that all webpages are required to have. The part at the end is the button that lets other remix the project. The important stuff is in the middle.
+You can ignore the stuff at the top. This is just boilerplate needed to load the 3d library (*a-frame.min.js*) into the webpage, plus the elements that all webpages are required to have. The part at the end is the button that lets others remix the project. The important stuff is in the middle.
 
 The `a-scene` element represents the entire 3D scene. Everything in 3D should be inside of the *a-scene*.
 
