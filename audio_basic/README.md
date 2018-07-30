@@ -1,5 +1,5 @@
 
-# Basic Audio
+# Basic Audio Workshop
 
 In this workshop you will learn how to add audio effects to your VR scene.
 
