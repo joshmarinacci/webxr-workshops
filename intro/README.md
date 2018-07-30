@@ -36,7 +36,7 @@ When you load the live view the text inside of the anchor element will be underl
 
 This is the second big important idea of the web:  __The web is made of links from one page to another__.
 
-Let's create our own second page instead of linking to NASA. In the left sidebar click the (button) and choose (new page). Name the new page `rocket.html`.  Inside of that page paste this content:
+Let's create our own second page instead of linking to NASA. In the left sidebar click the *New File* button and name the new page `rocket.html`; then click *Add File*.  Inside of that page paste this content:
 
 
 ```
