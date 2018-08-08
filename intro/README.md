@@ -1,4 +1,4 @@
-# Introduction to HTML, WebXR, and AFrame
+# Introduction to HTML, WebXR, and A-Frame
 
 What the student will learn: How markup in the source code translates
 into what you see in the final webpage. They will make a simple page with standard html, add an image, then switch to VR mode and add a cube.
@@ -6,7 +6,7 @@ into what you see in the final webpage. They will make a simple page with standa
 # Simple HTML
 
 Go to [this](https://webxr-workshop-01.glitch.me) webpage in a new window or
-tab. Press the `remix` button to create a copy for yourself.  Now select the `index.html` page to see the markup. Now press the *Show* button. This will open a new tab showing the live webpage.
+tab. Click the fish button in the upper right hand corner, then select the `Remix on Glitch` button to create a copy for yourself.  Now select `index.html` in the sidebar to see the markup. Now click on *Show* in the top bar. This will open a new tab showing the live webpage.
 
 
 ![markup](images/markup-start.png)
@@ -17,8 +17,8 @@ tab. Press the `remix` button to create a copy for yourself.  Now select the `in
 Notice how what you see in the real view looks sort
 of like the markup. Headers and paragraphs.
 
-Now go back to the code view. Change the header to
-say "Greetings Earthling". Now go back to the live view. It will automatically update. Now you can see 'Greetings Earthling' as the header.
+Now go back to the code view. Change the text that says "Hello World" in `h1` angle brackets (the `<` and `>` symbols) to
+say "Greetings Earthling". Now go back to the live view. It will automatically update. Now you should see "Greetings Earthling" as the header.
 
 What you have been writing is called HTML, which stands for Hyper Text Markup Language. It is a special kind of computer code used to make webpages.  Those things inside of the angle brackets (< and > symbols) are called HTML *elements*.  Each element corresponds to something in the output document.
 
@@ -36,7 +36,7 @@ When you load the live view the text inside of the anchor element will be underl
 
 This is the second big important idea of the web:  __The web is made of links from one page to another__.
 
-Let's create our own second page instead of linking to NASA. In the left sidebar click the (button) and choose (new page). Name the new page `rocket.html`.  Inside of that page paste this content:
+Let's create our own second page instead of linking to NASA. In the left sidebar click the *New File* button and name the new page `rocket.html`; then click *Add File*.  Inside of that page paste this content:
 
 
 ```
@@ -49,16 +49,15 @@ Let's create our own second page instead of linking to NASA. In the left sidebar
 </html>
 ```
 
-Select the first page from the Glitch sidebar. Change the a link to point to `rocket.html` instead of the nasa website.  Load in the live view.
-Now when you click on the link it will go to your new page with the picture of the rocket.
+Select the first page from the Glitch sidebar. Change the `<a>` link to point to `./rocket.html` instead of the nasa website: `<a href="./rocket.html">`  Reload the live view. Now when you click on the link it will go to your new page with the picture of the rocket.
 
-This is the third big thing to know about the web. __A website is a collection of webpages with text and media.__
+This is the third big thing to know about the web. __A website is a collection of web pages with text and media.__
 
 ## The 3D Web
 
 So far everything we have made has been a two dimensional text based webpage.  But this course is about how to make 3D graphics and Virtual Reality with the web. Let's create a 3D webpage now.
 
-Go to [this](https://webxr-workshop-lesson01b.glitch.me/) webpage and view it. This page contains a minimal 3d scene of a sphere. You can turn the camera by dragging with your mouse. If you have a phone or VR headset with you, then open this webpage on that device to see it in full 3D.
+Go to [this](https://webxr-workshop-lesson01b.glitch.me/) webpage and view it. This page contains a minimal 3d scene of a sphere. You can turn the camera by dragging with your mouse or trackpad.. If you have a phone or VR headset with you, then open this webpage on that device to see it in full 3D.
 
 Now click the remix button in the upper right corner to create your own copy. Let's look at the code in `index.html`
 
@@ -91,11 +90,11 @@ The code looks like this:
 
 Like before, every element in the page matches something in the output.  Let's walk through it.
 
-You can ignore the stuff at the top. This is just boilerplate needed to load the 3d library (*a-frame.min.js*) into the webpage, plus the elements that all webpages are required to have. The part at the end is the button that lets other remix the project. The important stuff is in the middle.
+You can ignore the stuff at the top. This is just boilerplate needed to load the 3d library (*a-frame.min.js*) into the webpage, plus the elements that all webpages are required to have. The part at the end is the button that lets others remix the project. The important stuff is in the middle.
 
 The `a-scene` element represents the entire 3D scene. Everything in 3D should be inside of the *a-scene*.
 
-The `a-sphere` element creates the red sphere that we see in the live view. The position is set to `0 1.5 -4`. This creates a yellow sphere one meter in radius, placed four meters in front of the camera.
+The `a-sphere` element creates the red sphere that we see in the live view. The position is set to `0 1.5 -4`. This creates a red sphere one meter in radius, placed four meters in front of the camera.
 
 ## Position
 
@@ -132,7 +131,7 @@ You can use most color names for the color, such as cyan, blue, aqua, gray and [
 
 Much like in many other programming languages, you can also use a hex value like `#ff0000` for red or `#888888` for gray.
 
-So far we have only used one object. Let's add a cube and position it right under the sphere. Move the sphere to 0 1.5 -4, so it's in front of you and 1 meter above the center.  Now add a cube by pasting in this code:
+So far we have only used one object. Let's add a cube and position it right under the sphere. Move the sphere to 0 1.5 -4, so it's in front of you and 1.5 meters above the center.  Now add a cube by pasting in this code within the `<a-scene>` element:
 
 ```
 <a-box
@@ -151,10 +150,19 @@ Now you have a purple one meter cube. Try moving it around, changing the sizes, 
 If you'd like to add some other shapes, try the cylinder and the cone.
 
 ```
-<a-cone radius-bottom="2"
-        radius-top="0.5"></a-cone>
+<a-cone radius-bottom="1"
+        height="1.5"
+        color="blue"
+        radius-top="0.5"
+        position="0 1.5 -4"
+        ></a-cone>
 
-<a-cylinder height="3" radius="1.5"></a-cylinder>        
+<a-cylinder
+        height="3" 
+        radius="1.5"
+        color="blue"
+        position="0 1.5 -4"  
+></a-cylinder>        
 ```
 
 ### Summary

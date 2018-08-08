@@ -80,7 +80,7 @@ Remove the other objects from your scene and add this one
 
 ![curved image](images/curved-image.png)
 
-Now when you plan left or right it still looks good because the image is warped along with the screen. Curved images are perfect for when you need to show several images next to each other that are all seen from the same viewpoint.
+Now when you move the camera left or right it still looks good because the image is warped along with the screen. Curved images are perfect for when you need to show several images next to each other that are all seen from the same viewpoint.
 
 Much as the flat image is just a plane with a picture on it, curved images are partial cylinders with pictures on them. While they look similar they have different geometry. Look at both of them with the `wireframe="true"`` so you can see the underlying triangles.  At the end of the day everything in 3D scenes is drawn using a lot of triangles.
 
@@ -119,9 +119,9 @@ Add this to your project
               ></a-entity>
 ```
 
-To build something complex like this duck you can't do it by just adding primitives like cubes together (well, I suppose you *could* do it, but it would be very hard and take a long time). Instead, objects like these are drawn in 3D drawing programs like [Blender](https://www.blender.org) and [Maya](https://www.autodesk.com/products/maya/overview).  They are then exported to GLTF files.
+To build something complex like this duck you can't do it by just adding primitives like cubes together (well, I suppose you *could* do it, but it would be very hard and take a long time). Instead, objects like these are drawn in 3D drawing programs like [Blender](https://www.blender.org) and [Maya](https://www.autodesk.com/products/maya/overview).  They are then exported as GLTF files.
 
-GLTF stands for Graphics Language Transmission Format. GLTF is [a standard format](https://en.wikipedia.org/wiki/GlTF) for 3D objects on the web. Most 3D drawing programs will export to GLTFs.  The duck above was created by one of the Mozilla Mixed Reality designers.
+GLTF stands for Graphics Language Transmission Format. GLTF is [a standard format](https://en.wikipedia.org/wiki/GlTF) for 3D objects on the web. Most 3D drawing programs will export models as GLTFs.  The duck above was created by one of the Mozilla Mixed Reality designers.
 
 If you open the A-Frame [Visual Inspector](https://aframe.io/docs/0.8.0/introduction/visual-inspector-and-dev-tools.html) and zoom in you can see that the duck is made of many triangles
 
@@ -131,10 +131,10 @@ If you open the A-Frame [Visual Inspector](https://aframe.io/docs/0.8.0/introduc
 
 ## Summary:
 
-Now you have learned that objects are built out of many triangles. These triangles are called the object's __geometry__ and can be created from __primitives__ like cylinders or in 3D drawing programs like Blender. Some objects are actually _2D_, and can have only 2 sides, or even _one side_.  To see the geometry inside of an object set __wireframe__ to true.
+Now you have learned that objects are built out of many triangles. These triangles are called the object's __geometry__ and can be created from __primitives__ like cylinders or in 3D drawing programs like Blender. Some objects are actually _2D_, and can have only two sides, or even _one side_.  To see the geometry inside of an object set __wireframe__ to true.
 
 ### Enrichment
 To play some more with geometry, try these.
 
 * Use some of the more advanced primitives like a [torus](https://aframe.io/docs/0.8.0/primitives/a-torus.html) (a donut shape), a [dodecahedron](https://aframe.io/docs/0.8.0/primitives/a-dodecahedron.html) (a 12 sided ball), or even the [torus knot](https://aframe.io/docs/0.8.0/primitives/a-torus-knot.html) which looks like a pretzel.
-* Place three images in a row using [curved images](https://aframe.io/docs/0.8.0/primitives/a-curvedimage.html) so you can see them as you turn your head.
+* If you have a VR headset, try placing three images in a row using [curved images](https://aframe.io/docs/0.8.0/primitives/a-curvedimage.html) so you can see them as you turn your head.
