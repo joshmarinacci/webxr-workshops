@@ -43,3 +43,11 @@ students they can complete the workshop modules on their own and just come ask f
   * learn how physics affects a scene
   * explore how different gravity, friction, and bounciness affect the scene
   * build a simple ping pong game with collision tracking for scores
+
+
+## Coming soon
+
+* Animation and Particle effects
+* Working with complex 3D models
+* Events and input management
+* making custom geometry with code
