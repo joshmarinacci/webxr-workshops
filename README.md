@@ -21,8 +21,25 @@ students they can complete the workshop modules on their own and just come ask f
 ## Available modules
 
 * [Introduction to HTML, WebXR, and A-Frame](intro/)
+  * explains how markup in the *input code* becomes elements in the *output page*
+  * first VR example
 * [Basic Geometry](geometry_basic/)
+  * introduces cubes, spheres, cylinders and other primitive solids
+  * visualize the underlying mesh of polygons that makes up a shapes
+  * first example of using images and full 3d models in VR
 * [Basic Audio](audio_basic/)
+  * add background music to a scene
+  * explore positional audio
+  * trigger sounds when clicking on objects
 * [Basic Lighting](lighting_basic/)
+  * learn how lights affect the color and shade of objects
+  * explore directional, ambient, emissive, and point lighting_basic
+  * create simple shadows
 * [360 Images](360images/)
+  * learn what 360 images are
+  * learn how to find 360 images on the web and add them to your own projects
+  * learn about different kinds of 360 images and 360 cameras
 * [Physics](physics/)
+  * learn how physics affects a scene
+  * explore how different gravity, friction, and bounciness affect the scene
+  * build a simple ping pong game with collision tracking for scores
