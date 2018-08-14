@@ -54,7 +54,8 @@ Now reload the page and the cube will fall down and move around until it settles
 ![dynamic image](images/cube-falling.png)
 
 Now turn on debugging so we can see what's going on.  
-Set debug:true on the physics
+Set debug:true on the physics. This will draw outlines around every
+object with physics enabled.
 
 ```
 <a-scene
