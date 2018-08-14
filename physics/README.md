@@ -135,7 +135,7 @@ on($('a-scene'),'loaded',()=>{
 
 The first argument to applyImpulse is the direction. The vector CANNON.Vec3(0,0,-50) makes the ball go zero in the x and y directions and a speed of 50 in the negative z direction (away from the camera). Now the ball will shoot away from the camera, bounce off the yellow backboard, then zoom towards and through the camera. Since we have no gravity the ball will continue bouncing forever.
 
-Now let's add a paddle. Make a translucent box and place it  inside of the camera like this. The box should be a static-body
+Now let's add a paddle. Make a translucent plane and place it inside of the camera like this. The plane should be a `static-body`
 
 ```html
 <a-camera position="0 0 0">
