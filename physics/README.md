@@ -86,7 +86,7 @@ This scene is actually composed of six planes in addition to the wall. By using 
 
 ![pong without physics](images/pong-no-physics.png)
 
-Physics is turned on in this scene but nothing is happening after the ball falls down.  Let's chnge things a bit. first, turn off gravity and set restitution to 1.0 so the ball is super bouncy.
+Physics is turned on in this scene but nothing is happening after the ball falls down.  Let's change things a bit: remix the project, then turn off gravity and set restitution to 1.0 so the ball is super bouncy.
 
 ```
 <a-scene physics="debug:true; gravity:0; restitution:1.0;">
