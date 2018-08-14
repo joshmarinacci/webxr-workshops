@@ -11,16 +11,15 @@ Start by remixing [this]() Glitch project. It shows a simple scene of a floor an
 
 The cube is hovering in mid-air instead of falling. That is because we don't have physics turned on yet.  Don McCurdy has created [bindings to Cannon.js for A-Frame](https://github.com/donmccurdy/aframe-physics-system). Add them to your scene by adding this to the top of your HTML file, just below the script tag for aframe.
 
-```
+```html
 <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"></script>
 
 ```
 
 Now modify the `a-scene` to have a physics component like this:
 
-```
-<a-scene 
-         physics="debug:false">      
+```html 
+<a-scene physics="debug:false">      
 ```
 
 This line will add physics to the scene, but it won't do anything yet. 
@@ -32,7 +31,7 @@ Add the `static-body` attribute to the box and the plane.
 Add the dynamic-body attribute to the box with the id of 'ball'
 
 
-```
+```html
 <a-box
     id="box"
     ...
@@ -54,12 +53,11 @@ Now reload the page and the cube will fall down and move around until it settles
 ![dynamic image](images/cube-falling.png)
 
 Now turn on debugging so we can see what's going on.  
-Set debug:true on the physics. This will draw outlines around every
+Set `debug:true` on the `physics` component. This will draw outlines around every
 object with physics enabled.
 
-```
-<a-scene
-         physics="debug:true">      
+```html
+<a-scene physics="debug:true">      
 ```
 
 ![falling cube with debug outlines](images/falling-with-debug.png)
@@ -71,7 +69,7 @@ Cannon that these objects should have physics calculations done on them.  Dynami
 
 You can customize the physics for your scene. For example, set the restitution of the scene to 0.1.
 
-```
+```html
 <a-scene physics="debug:true; restitution:0.1;">      
 ```
 
@@ -90,13 +88,21 @@ This scene is actually composed of six planes in addition to the wall. By using 
 
 Physics is turned on in this scene but nothing is happening after the ball falls down.  Let's change things a bit: remix the project, then turn off gravity and set restitution to 1.0 so the ball is super bouncy.
 
-```
+```html
 <a-scene physics="debug:true; gravity:0; restitution:1.0;">
  ```
 
-Now the ball stops falling. But without gravity how can we get it to move? Simple: apply an impulse.    When the scene is loaded we want the ball to start bouncing around. Add an event handler to run when the scene fires the `loaded` event.
+Now the ball stops falling. But without gravity how can we get it to move? Simple: apply an impulse. When the scene is loaded we want the ball to start bouncing around. Add an event handler to run when the scene fires the `loaded` event. We need the help of JavaScript again. Near the bottom of the file you should see this code within `script` elements.
+
+```javascript
+on($('a-scene','loaded',()=>{
+    
+}))
 ```
-on($('a-scene'),'loaded',()=>{
+
+Add these lines between the curly braces:
+
+```javascript
     const ball = $('#ball')
     const pos = ball.getComputedAttribute('position')
 
@@ -105,6 +111,24 @@ on($('a-scene'),'loaded',()=>{
       new CANNON.Vec3(0, 0, -50),
       new CANNON.Vec3().copy(pos)
     )
+```
+
+Now it should look like this:
+
+```javascript
+const $ = (sel) => document.querySelector(sel)
+const on = (el,type,cb) => el.addEventListener(type,cb)
+on($('a-scene'),'loaded',()=>{
+
+    const ball = $('#ball')
+    const pos = ball.getComputedAttribute('position')
+
+    //start the ball moving
+    ball.body.applyImpulse(
+      new CANNON.Vec3(0, 0, -50),
+      new CANNON.Vec3().copy(pos)
+    )
+    
 })
 ```
 
@@ -113,7 +137,7 @@ The first argument to applyImpulse is the direction. The vector CANNON.Vec3(0,0,
 
 Now let's add a paddle. Make a translucent box and place it  inside of the camera like this. The box should be a static-body
 
-```
+```html
 <a-camera position="0 0 0">
     <a-plane id="paddle"
         width="1.5"
@@ -132,7 +156,7 @@ Now the ball will bounce between the backboard and the paddle. Because the paddl
 
 At this point the game basically works. The player can tilt their head to hit the ball from different angles. However there is no score. In order to calculate the score we need to count the number of times the ball hits the paddle.  This is called a collision. We can detect collisions by listening for collide events on the ball. Add this JavaScript code inside the `loaded` event handler.
 
-```
+```javascript
 let count = 0
 //collision handler
 on(ball,'collide',(e)=>{
@@ -147,7 +171,7 @@ Every object with physics has a unique ID on the body component. By comparing id
 
 Now we just need to show the score. Add this `a-text` element inside of the camera, so it will stick to the screen.
 
-```
+```html
     <a-text id="score"
             position="0 1 -2"
             value="0"
@@ -158,7 +182,7 @@ Now we just need to show the score. Add this `a-text` element inside of the came
 And add this to the collide event handler to update the score
 whenever the count changes.
 
-```
+```html
 $("#score").setAttribute('text','value',count)
 ```
 
