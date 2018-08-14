@@ -128,7 +128,7 @@ Now the ball will bounce between the backboard and the paddle. Because the paddl
 
 ![pong with paddle](images/pong-with-paddle.png)
 
-At this point the game basically works. The player can tilt their head to hit the ball from different angles. However their is no score. In order to calculate the score we need to count the number of times the ball hits the paddle.  This is called a collision. we can detect collisions by listening for collide events on the ball. Add this JavaScript code inside the `loaded` event handler.
+At this point the game basically works. The player can tilt their head to hit the ball from different angles. However there is no score. In order to calculate the score we need to count the number of times the ball hits the paddle.  This is called a collision. We can detect collisions by listening for collide events on the ball. Add this JavaScript code inside the `loaded` event handler.
 
 ```
 let count = 0
