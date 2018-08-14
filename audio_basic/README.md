@@ -11,7 +11,7 @@ First look at the source in `index.html`.  Notice that the scene has a section i
 
 To play the rain sound attach it to the scene. Add the code `sound=" src: #rain; "` to the scene like this
 
-```
+```html
     <a-scene sound="src: #rain;">
 ```
 
@@ -19,13 +19,13 @@ Whenever you use a word prefixed with the `#` symbol it becomes a *reference by 
 
 If you preview your app the scene will open, but you won't hear the sound. Why? Because we haven't made it play!  Add `autoplay:true` to make it automatically play when the scene loads.
 
-```
+```html
 <a-scene sound="src: #rain; autoplay:true;">
 ```
 
 There we go. Now the sound will play for a few seconds. However, we don't want it to just play once. The rain is meant to be the background noise of our scene. It should play constantly. Let's make it loop forever by adding `loop:true;`
 
-```
+```html
     <a-scene sound="src: #rain; autoplay:true; loop:true;">
 ```
 
@@ -35,7 +35,7 @@ Great. Now our scene has a constant background sound. Let's shift to the cube no
 
 To play the clang sound first we must attach the sound to the cube, just as we attached the rain to the scene. Add a sound component to the cube referencing the clang sound: `sound="src:#clang"`. Now the cube code will look like this:
 
-```
+```html
 <a-box
      id="box"
      position="-1 0.5 -3"
@@ -47,22 +47,22 @@ To play the clang sound first we must attach the sound to the cube, just as we a
 
 To make the sound play when the cube is clicked we must add an _event handler_.  
 
-In the `<script>`  section near the bottom there are two shorthand functions called `$` and `on` to make your code simpler.  The `$` function searches the whole page for an element matching a selector.  Searching for `#box` will return an element with an `id` of `box`. (other CSS selectors are supported as well).  The `on` function will attach an event handler. so `on(box,'click', a_function)`  is just shorthand for the longer `addEventListener` function.
+In the `<script>`  section near the bottom there are two shorthand functions called `$` and `on` to make your code simpler.  The `$` function searches the whole page for an element matching a selector.  Searching for `#box` will return an element with an `id` of `box`. (other CSS selectors are supported as well).  The `on` function will attach an event handler. so `on(box,'click', a_function)`  is just shorthand for the longer `box.addEventListener('click',a_function)` function.
 
-```
+```javascript
 const $ = (sel) => document.querySelector(sel)
 const on = (el,type,cb) => el.addEventListener(type,cb)
 ```
 
-Now, below those two functions create a variable `box` to hold a reference to the box.
+Below those two functions create a variable `box` to hold a reference to the box.
 
-```
-var box = $("#box")
+```javascript
+const box = $("#box")
 ```
 
 Now add a click event handler to show a message
 
-```
+```javascript
 on(box,'click',(e)=>{
     alert("someone clicked on the box")
 })
@@ -72,7 +72,7 @@ Refresh the preview page and test it. When you move the cursor to the box and cl
 
 Great. Now we have an event handler that works. Remove the alert and add this code to play the sound.
 
-```
+```javascript
 on(box,'click',()=>{
     box.components.sound.playSound()
 })
@@ -88,7 +88,7 @@ The rain sound is *not* positional because we attached it to the *scene* which e
 
 One final detail. The rain sound is meant to add mood but it shouldn't overwhelm the clang sound, which is the focus of the user's attention. Turn the volume of the rain down by adding `volume:0.5;`
 
-```
+```html
 <a-scene sound="src: #rain; autoplay:true; loop:true; volume:0.5;">
 ```
 
