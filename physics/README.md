@@ -19,11 +19,12 @@ The cube is hovering in mid-air instead of falling. That is because we don't hav
 Now modify the `a-scene` to have a physics component like this:
 
 ```
-<a-scene stats
+<a-scene 
          physics="debug:false">      
 ```
 
-This line will add physics to the scene, but it won't do anything yet. By default objects are not affected by physics,
+This line will add physics to the scene, but it won't do anything yet. 
+By default objects are not affected by physics,
 since physics is expensive to calculate. We must tell the
 engine which things need physics in the scene.
 
