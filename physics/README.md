@@ -5,7 +5,7 @@ Part of simulating reality in a virtual world is not just the colors and lights,
 
 ### A simple scene
 
-Start by remixing [this]() Glitch project. It shows a simple scene of a floor and a large backdrop block, and a cube hovering over the ground. It looks like this:
+Start by remixing [this](https://webxr-workshop-physics.glitch.me/) Glitch project. It shows a simple scene of a floor and a large backdrop block, and a cube hovering over the ground. It looks like this:
 
 ![simpel scene](images/simple-scene.png)
 
