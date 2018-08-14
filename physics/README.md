@@ -179,8 +179,7 @@ Now we just need to show the score. Add this `a-text` element inside of the came
 
 
 ```
-And add this to the collide event handler to update the score
-whenever the count changes.
+And add this to the collide event handler (just below the `if` statement) to update the score whenever the count changes:
 
 ```html
 $("#score").setAttribute('text','value',count)
