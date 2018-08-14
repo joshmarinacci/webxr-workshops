@@ -9,7 +9,7 @@ Start by remixing [this]() Glitch project. It shows a simple scene of a floor an
 
 ![simpel scene](images/simple-scene.png)
 
-The cube is hovering it mid-air instead of falling. That is because we don't have physics turned on yet.  Don McCurdy has created [bindings to Cannon.js for A-Frame](https://github.com/donmccurdy/aframe-physics-system). Add them to your scene by adding this to the top of your HTML file, just below the script tag for aframe.
+The cube is hovering in mid-air instead of falling. That is because we don't have physics turned on yet.  Don McCurdy has created [bindings to Cannon.js for A-Frame](https://github.com/donmccurdy/aframe-physics-system). Add them to your scene by adding this to the top of your HTML file, just below the script tag for aframe.
 
 ```
 <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"></script>
