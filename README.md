@@ -39,6 +39,10 @@ students they can complete the workshop modules on their own and just come ask f
   * learn what 360 images are
   * learn how to find 360 images on the web and add them to your own projects
   * learn about different kinds of 360 images and 360 cameras
+* [3D Models](models/)
+  * learn what 3D models are and about the GLTF format
+  * learn how to add models to a page and convert between formats
+  * learn how to add simple animations and play canned animations
 * [Physics](physics/)
   * learn how physics affects a scene
   * explore how different gravity, friction, and bounciness affect the scene
