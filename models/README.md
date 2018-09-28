@@ -3,7 +3,7 @@
 ### Introduction
 In this workshop you will learn about what 3D models are, how to use them in your projects, and how to animate them.  
 
-### What are 3D models
+### What are 3D models?
 You may remember at  the end of the [geometry workshop](../geometry_basic/) that we added a model of a duck using the `gltf-model` component. This model is a collection of geometry objects made up of triangles (a mesh) combined with a texture to 'skin' the model, and any internal animation.  This model is the output of a 3D modeling program like [Blender](), [Maya](https://www.autodesk.com/products/maya/overview), or [Tinkercad](https://www.tinkercad.com/#/).
 
 Everything in VR has geometry. This geometry defines the shape. The geometry may seem like an abstract shape such as a sphere or cylinder, but underneath it is made out of triangles because that is all the computer *actually* knows how to draw.  Using math the A-Frame components like `a-sphere` convert an abstract shape into these triangles.  However, some shapes are too complicated to describe with simple math. Instead these shapes must be drawn using a 3D modeling tool. 
@@ -20,7 +20,7 @@ A-Frame and ThreeJS support GLTF natively. While some 3D web frameworks support 
 
 To use GLTF in your A-Frame project simply reference it as an asset in your scene then attach it to an entity with the `gltf-model` component. 
 
-Remix this [this example glitch project](https://webxr-workshop-gltf.glitch.me/). It contains a single entity with a duck model. The most is hosted on `https://vr.josh.earth/assets/models/`, where Josh has collected several models for you to use.
+Remix this [this example glitch project](https://webxr-workshop-gltf.glitch.me/). It contains a single entity with a duck model. The model is hosted on `https://vr.josh.earth/assets/models/`, where Josh has collected several models for you to use.
 
 Once you have a model in your scene you can perform simple animations using the `a-animation` component.  Try making the duck rotate by adding this code:
 
