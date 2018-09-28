@@ -87,7 +87,7 @@ Cool! now the cauldron is *bubbling*.
 
 ### Multiple Clips
 
-What if the model has more than one animation in it? For example, this model [Hero Knight](https://sketchfab.com/models/30b8847ce37441a2ab7c00b3d5fe4af2) by [iamneuron](link) has several animations for standing, running, slaying, etc.  These are called *clips* and to choose between them you must use the `clip` property of the animation-mixer component.
+We did not specify *which* animation to use for the cauldron because the 3D model file only has one animation embedded in it. If you don't specify an animation the `animation-mixer` will use the first one it finds as the default.  However, what if the model *does* have more than one animation in it? For example, this model [Hero Knight](https://sketchfab.com/models/30b8847ce37441a2ab7c00b3d5fe4af2) by [iamneuron](link) has several animations for standing, running, slaying, etc.  These are called *clips* and to choose between them you must use the `clip` property of the animation-mixer component.
 
 There's just one problem. Before we can choose a clip we need to find out the *names* of the clips in the model.  We need a tool to inspect the model and give us this information. I highly recommend the [glTF Viewer](https://gltf-viewer.donmccurdy.com/) by Don McCurdy (if you play around with VR on the web for a while you’ll hear Don’s name over and over). 
 
