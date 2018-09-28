@@ -22,7 +22,7 @@ To use GLTF in your A-Frame project simply reference it as an asset in your scen
 
 Remix this [this example glitch project](https://webxr-workshop-gltf.glitch.me/). It contains a single entity with a duck model. The model is hosted on `https://vr.josh.earth/assets/models/`, where Josh has collected several models for you to use.
 
-Once you have a model in your scene you can perform simple animations using the `a-animation` component.  Try making the duck rotate by adding this code:
+Once you have a model in your scene you can perform simple animations using the `a-animation` component.  Try making the duck rotate by deleting the existing (duck) entity code and pasting in this code:
 
 ```html
 <a-entity gltf-model="#duck" position="0 1.5 -4">
